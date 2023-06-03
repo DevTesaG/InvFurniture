@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product.model';
 import { HttpClient } from '@angular/common/http';
-
-const baseUrl = 'https://expresssqliteapi.tesag.repl.co/api/product';
+import { environment } from 'src/environments/environment';
+const baseUrl = environment.api_url;
 
 @Injectable({
   providedIn: 'root'
